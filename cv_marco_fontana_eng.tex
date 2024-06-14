@@ -1,0 +1,67 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\moderncvstyle{classic}
+\nopagenumbers{}
+
+% adjust the page margins
+\usepackage[margin=24mm]{geometry}
+
+% font loading
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% \usepackage[sfdefault,light]{roboto}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{GoSans}
+% \usepackage[sfdefault]{josefin}
+% \usepackage[sfdefault]{libertinus}
+% \usepackage[math]{kurier}
+\usepackage[familydefault]{Rosario}
+
+
+% document language
+\usepackage[english]{babel}
+
+% personal data
+
+\title{Electronic Engineer}
+\name{Marco}{Fontana}
+\born{24 january 1997}
+\address{Castel d'Ario -- Mantova}{}{}
+\email{fontana.marco.097@gmail.com}
+\social[github]{github.com/its-fonsy}
+\phone[mobile]{+39 345~8575~084}
+\photo[64pt]{img/photo.jpg}
+
+%\phone[mobile]{+1~(234)~567~890}
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+%\homepage{www.johndoe.com}
+% \extrainfo{additional information}
+%\quote{Some quote}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\input{eng/education.tex}
+
+\input{eng/master_thesis.tex}
+
+\input{eng/jobs.tex}
+
+\input{eng/computer_skills.tex}
+
+\pagebreak
+
+\input{eng/langs.tex}
+
+\input{eng/interesets.tex}
+
+\input{eng/personal_prjs.tex}
+
+\end{document}
