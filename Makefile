@@ -5,7 +5,7 @@ PDF := $(TEX:%.tex=%.pdf)
 
 all: $(PDF)
 
-%.pdf : %.tex
+%.pdf : %.tex eng/*.tex ita/*.tex
 	latexmk --pdf $<
 
 clean:
