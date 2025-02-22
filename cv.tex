@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\moderncvstyle{classic}
+\nopagenumbers{}
+
+% adjust the page margins
+\usepackage[margin=24mm]{geometry}
+
+% font loading
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, italian]{babel}
+
+\newcommand{\langit}[1]{\ifit\selectlanguage{italian}#1\fi}% 
+\newcommand{\langen}[1]{\ifen\selectlanguage{english}#1\fi}%
+
+% \usepackage[sfdefault,light]{roboto}
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{GoSans}
+% \usepackage[sfdefault]{josefin}
+% \usepackage[sfdefault]{libertinus}
+% \usepackage[math]{kurier}
+\usepackage[familydefault]{Rosario}
+
+% Personal Data
+
+\langit{\title{Ingegnere Elettronico Junior}}
+\langen{\title{Junior Electronic Engineer}}
+\name{Marco}{Fontana}
+\born{24/01/1997}
+\address{Castel d'Ario -- Mantova}{}{}
+\email{fontana.marco.097@gmail.com}
+\social[github]{github.com/its-fonsy}
+% \social[linkedin]{https://www.linkedin.com/in/marco-fontana-aa189830a/}
+\phone[mobile]{+39 345~8575~084}
+\photo[64pt]{photo.jpg}
+
+%----------
+% Content |
+%----------
+
+\begin{document}
+
+\makecvtitle
+
+\input{src/education.tex}
+\input{src/experiences.tex}
+\input{src/computer_skills.tex}
+\input{src/languages.tex}
+\input{src/interests.tex}
+\input{src/personal_projects.tex}
+
+\end{document}
