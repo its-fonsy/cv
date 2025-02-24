@@ -36,19 +36,21 @@
 \phone[mobile]{+39 345~8575~084}
 \photo[64pt]{photo.jpg}
 
-%----------
-% Content |
-%----------
+% Content
 
 \begin{document}
+    \makecvtitle
 
-\makecvtitle
-
-\input{src/education.tex}
-\input{src/experiences.tex}
-\input{src/computer_skills.tex}
-\input{src/languages.tex}
-\input{src/interests.tex}
-\input{src/personal_projects.tex}
+    \input{src/education.tex}
+    \input{src/experiences.tex}
+    \input{src/computer_skills.tex}
+    \input{src/personal_projects.tex}
+    \begin{minipage}[t]{0.5\textwidth}
+        \input{src/languages.tex}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.5\textwidth}
+        \input{src/interests.tex}
+    \end{minipage}
 
 \end{document}
